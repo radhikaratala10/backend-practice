@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-mongoose.connect("mongodb+srv://radhikaratala10_db_user:301224@cluster0.hutf9yw.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
  console.log("MongoDB connected")
 })
