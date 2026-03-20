@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 
 const app = express()
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_ATLS)
 .then(()=>{
  console.log("MongoDB connected")
 })
