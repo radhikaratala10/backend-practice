@@ -3,7 +3,7 @@ const connectDB = require("./config/db");
 require("dotenv").config();
 const empsRoutes = require("./routes/empsRoutes");
 const { createEmp ,readEmp,readSingleEmp,updateEmp,deleteEmp} = require('./controllers/empController');
-const emp=require("./models/empSchema");
+const emp =require("./models/empSchema");
 
 const app = express()
 
